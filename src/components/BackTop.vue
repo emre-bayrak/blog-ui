@@ -1,3 +1,3 @@
 <template>
-  <p>Sidebar</p>
+  <a-back-top />
 </template>

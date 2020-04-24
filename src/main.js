@@ -1,10 +1,11 @@
-import Vue from 'vue'
-import App from './App.vue'
-import { DatePicker } from 'ant-design-vue';
-Vue.use(DatePicker);
-
+import Vue from 'vue';
+import Antd from 'ant-design-vue';
+import './antd-variables.less';
+import App from './App.vue';
 Vue.config.productionTip = false
+
+Vue.use(Antd);
 
 new Vue({
   render: h => h(App),
-}).$mount('#app')
+}).$mount('#app');
