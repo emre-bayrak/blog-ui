@@ -1,23 +1,14 @@
+<script>
+export default {
+  props: [ 'posts' ]
+}
+</script>
+
 <template>
   <a-layout-content>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-        probare, quae sunt a te dicta? Refert tamen, quo modo.
-      </p>
+    <div v-for="(post,index) in posts" :key="index">
+      <p class="post"> {{ post.post}} ( {{ moment(post.createdAt).startOf('hour').fromNow() }} )</p>
       <a-divider />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-        probare, quae sunt a te dicta? Refert tamen, quo modo.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-        probare, quae sunt a te dicta? Refert tamen, quo modo.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista
-        probare, quae sunt a te dicta? Refert tamen, quo modo.
-      </p>
     </div>
   </a-layout-content>
 </template>

@@ -20,7 +20,6 @@ export default {
       :style="{ lineHeight: '64px', marginRight: '100px' }"
     >
       <a-menu-item key="1">Home</a-menu-item>
-      <a-menu-item key="2">About</a-menu-item>
     </a-menu>
   </a-layout-header>
 </template>
