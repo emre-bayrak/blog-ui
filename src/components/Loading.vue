@@ -1,4 +1,9 @@
 <script>
+import Vue from 'vue';
+import { Spin } from 'ant-design-vue';
+
+Vue.use(Spin);
+
 export default {
   data() {
     return {

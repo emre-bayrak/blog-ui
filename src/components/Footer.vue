@@ -7,5 +7,9 @@
 <style>
 .ant-layout-footer {
   line-height: 1.5;
+  background: #001529;
+}
+h2 {
+  color: #FFF;
 }
 </style>
