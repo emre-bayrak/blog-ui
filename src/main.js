@@ -8,6 +8,7 @@ import router from './router';
 
 Vue.config.productionTip = false;
 
+
 Vue.filter('formatDate', function (value) {
   if (!value) return ''
   return Moment(value.toString()).format('MM/DD/YYYY hh:mm')

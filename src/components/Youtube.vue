@@ -23,7 +23,7 @@ export default {
         order: 'viewCount',
         maxResults: 10,
         q: '',
-        key: 'AIzaSyDr9-aMxK8iqRSUmnZICH9VhgdN5-WjVxk',
+        key: process.env.VUE_APP_YOUTUBE_API_KEY,
         prevPageToken: '',
         nextPageToken: ''
       }
